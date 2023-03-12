@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 1.05em;
+    padding: 0;
+}
+
+.container-body {
+    background-color: #232428;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    padding: 0 1% 0 1%;
+}
+
+.container-header {
+    background-color: #313338;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    padding: 1% 0;
+    font-size: 2.05em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.acor-item {
+    background-color: #232428;
+    cursor: pointer;
+}
+
+.container-accor:hover {
+    color: #FFFFFF;
+}
+
+.container-accor .acor-item {
+    width: 99%;
+    margin: 0 auto;
+    height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 1em, rgb(0 0 0 / 20%) 0 0 1em;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.container-accor label {
+    cursor: pointer;
+    background-color: rgb(49, 51, 56);
+    display: block;
+    padding: 0.5% 1%;
+    color: rgb(241, 196, 15);
+    box-sizing: border-box;
+    margin: 0 0 0.2%;
+}
+
+.container-accor label:hover {
+    color: #FFFFFF;
+}
+
+.container-accor input {
+    display: none;
+}
+
+.container-accor input:checked + label {
+    color: #FFFFFF;
+}
+
+.container-accor input:checked + label + .acor-item {
+    height: auto;
+    margin-top: -0.2%;
+    padding: 1% 0;
+}
+
+.container-accor label .quote{
+    display: flex;
+    justify-content: center;
+    margin-left: 99%;
+}
+
+.container-accor input:checked + label .quote {
+    transform: rotate(90deg);
+    transition: transform .35s;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.gif2 {
+    height: 9.3em;
+    width: 20%;
+}
